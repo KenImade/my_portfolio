@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}{{project.name}}{% endblock %}
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'css/project_detail_style.css' %}">
+{% endblock %}
+
+{% block content %}
+
+    <section class="project-container">
+        <a class="link return-link" href="{% url 'portfolio' %}"> <- Return to projects list</a>
+        <h1 class="project-title">{{project.name}}</h1>
+
+        <p class="tools">Tools</p>
+        <div class="skill-list">
+            {% for tool in project.tools %}
+                {% if tool == 'Python' %}
+                <span class="text skill">Python <img class="icon" src="{% static 'images/icons/python.png' %}"/></span>
+                {% endif %}
+
+                {% if tool == 'SQL' %}
+                <span class="text skill">SQL <img class="icon" src="{% static 'images/icons/sql-server.png' %}"/></span>
+                {% endif %}
+                
+                {% if tool == 'R' %}
+                <span class="text skill">R<img class="icon" src="{% static 'images/icons/letter-r.png' %}"/></span>
+                {% endif %}
+                
+                {% if tool == 'PowerBI' %}
+                <span class="text skill">PowerBI<img class="icon" src="{% static 'images/icons/Power-BI.svg' %}"/></span>
+                {% endif %}
+
+                {% if tool == 'Jupyter' %}
+                <span class="text skill">Jupyter Notebook<img class="icon" src="{% static 'images/icons/jupyter.png' %}"/></span>
+                {% endif %}
+
+                {% if tool == 'Matplotlib' %}
+                <span class="text skill">Matplotlib<img class="icon" src="{% static 'images/icons/matplotlib.svg' %}"/></span>
+                {% endif %}
+            {% endfor %}
+        </div>
+
+        {% if project.hasLinks %}
+        <p class="tools">Links</p>
+
+            {% if project.hasGit %}
+                <span>
+                    <a class="link text project-link" href={{project.gitLink}} target="_blank">
+                        Github<img class="icon" src="{% static 'images/icons/github-sign.png' %}"/>
+                    </a>
+                </span>
+               
+            {% endif %}
+
+            {% if project.hasExternalLink %}
+                <span>
+                    <a class="link text project-link" href={{project.externalLink}} target="_blank">
+                        Live Project <img class="icon" src="{% static 'images/icons/browser.png' %}"/>
+                    </a>
+                </span>
+            {% endif %}
+
+        {% endif %}
+
+        {% for chapter in project.chapters %}
+            <div>
+                <h2 class="section-title">{{chapter.title}}</h2>
+                {% for text in chapter.texts %}
+                <p class="text">{{text}}</p>
+                {% endfor %}
+                {% if chapter.hasImages %}
+                    <div class="gallery">
+                        {% for image in chapter.images %}
+                            <div class="image-container">
+                                <img src="{% static image.path %}" alt={{image.caption}}/>
+                                <p class="image-title">{{image.caption}}</p>
+                            </div>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            </div>
+        {% endfor %}
+    </section>
+{% endblock %}

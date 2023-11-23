@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Blog{% endblock %}
+
+{% block head %}
+    <!-- Additional head content specific to the about page -->
+    <link rel="stylesheet" href="{% static 'css/blog_style.css' %}">
+{% endblock %}
+
+{% block content %}
+<h1 class="title">
+    Blog
+</h1>
+
+<section class="posts">
+    <div id="articles-container">
+        <!-- Articles will be loaded here -->
+    </div>
+</section>
+
+<script src="{% static 'js/blog.js' %}"></script>
+{% endblock %}

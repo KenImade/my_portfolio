@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Page Not Found{% endblock %}
+
+{% block head %}
+    <!-- Additional head content specific to the about page -->
+    <link rel="stylesheet" href="{% static 'css/portfolio_style.css' %}">
+{% endblock %}
+
+{% block content %}
+    <h1 class="title">Page Not Found</h1>
+    <p class="text">Sorry the page you asked for does not exist...</p>
+    <a class="button-89" href="{% url 'home' %}">Return To Home Page</a>
+{% endblock %}
