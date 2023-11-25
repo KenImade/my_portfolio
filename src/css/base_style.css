@@ -46,6 +46,10 @@ body, #root {
     color: tomato;
 }
 
+#sidebar a.hover {
+    color: tomato;
+}
+
 .hamburger-menu {
     --x-width: calc(var(--hamburger-height) * 1.41421356237);
 

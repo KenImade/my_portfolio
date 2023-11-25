@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import '../css/base_style.css';
 import Logo from '../images/ki.png';
 
@@ -17,11 +17,11 @@ const Header = () => (
         </label>
         <aside className="sidebar">
             <nav>
-                <a href="/">Home</a>
-                <a href="/about">About</a>
-                <a href="/blog">Blog</a>
-                <a href="/portfolio">Portfolio</a>
-                <a href="/contact">Contact</a>
+                <NavLink to="/" reloadDocument>Home</NavLink>
+                <NavLink to="/about" reloadDocument>About</NavLink>
+                <NavLink to="/blog" reloadDocument>Blog</NavLink>
+                <NavLink to="/portfolio" reloadDocument>Portfolio</NavLink>
+                <NavLink to="/contact" reloadDocument>Contact</NavLink>
             </nav>
         </aside>
     </header>
