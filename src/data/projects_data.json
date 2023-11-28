@@ -83,7 +83,7 @@
     },
     {
         "id": 2,
-        "display": "true",
+        "display": true,
         "name": "Real estate dashboard",
         "description": "A dashboard for stakeholders in the real estate industry to utilise for gaining insight into the London and Brighton market.",
         "tools": ["PowerBI"],
