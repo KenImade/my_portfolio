@@ -22,7 +22,7 @@ function Portfolio() {
             <section className="portfolio">
                 <div id="articles-container">
                     {projects.map(project => (
-                        <div key={project.id}>
+                        project.display && <div key={project.id}>
                             {/* Ensure the dynamic path is correctly formed */}
                             <h2 className="article-title">
                                 <Link className="link" to={`/portfolio/${project.id}`}>{project.name}</Link>

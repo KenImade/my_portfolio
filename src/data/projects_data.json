@@ -1,6 +1,7 @@
 [
     {
         "id": 1,
+        "display": true,
         "name": "Optimising real estate valuation models with textual data.",
         "description": "This project was aimed at optimising the performance of real estate prediction models using textual data.",
         "tools": ["Python", "SQL", "Jupyter", "Matplotlib"],
@@ -82,6 +83,7 @@
     },
     {
         "id": 2,
+        "display": "true",
         "name": "Real estate dashboard",
         "description": "A dashboard for stakeholders in the real estate industry to utilise for gaining insight into the London and Brighton market.",
         "tools": ["PowerBI"],
@@ -134,6 +136,7 @@
     },
     {
         "id": 3,
+        "display": true,
         "name": "Initial Coin Offering (ICO) Prediction",
         "description": "Using relevant information about companies I evaluated various machine learning models to find which would be best at predicting successful ICO's.",
         "tools": ["R"],
