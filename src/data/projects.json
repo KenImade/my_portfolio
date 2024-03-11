@@ -1,0 +1,27 @@
+[
+    {
+        "title": "Financial Market Analyzer",
+        "description": "A Python-based application designed to retrieve, analyze, and visualize financial market data.",
+        "link": "https://github.com/KenImade/financial-market-analyser"
+    },
+    {
+        "title": "Enhancing Real Estate Valuation with Textual Data",
+        "description": "Improved valuation accuracy of property valuation models in London and Brighton by integrating textual analysis with traditional valuation metrics.",
+        "link": "https://drive.google.com/file/d/1STv9FcpJg5FVKDJh97PGvqjooPp6rSI3/view?usp=sharing"
+    },
+    {
+        "title": "Exploration of SBA/CDC 504 Loan Data",
+        "description": "Investigated the trends, patterns, and insights within 504 loan data spanning over a decade, aiming to understand the dynamics of loan allocations and their impact on small businesses.",
+        "link": "https://github.com/KenImade/sme-lending-eda"
+    },
+    {
+        "title": "Initial Coin Offering (ICO) Prediction",
+        "description": "Developed machine learning models using R to predict the succes or failure of ICO's",
+        "link": "https://github.com/KenImade/ico_prediction"
+    },
+    {
+        "title": "Fetal Health Classifier",
+        "description": "Developed machine learning classifier capable of identifying the health status of a fetal based on various criteria.",
+        "link": "https://github.com/KenImade/fetal_classifier"
+    }
+]
