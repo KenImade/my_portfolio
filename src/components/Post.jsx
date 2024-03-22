@@ -28,7 +28,9 @@ const Post = () => {
         }, {});
 
         const html = marked.parse(markdownContent);
-        const sanitizedHtml = DOMPurify.sanitize(html);
+        const sanitizedHtml = DOMPurify.sanitize(html, {
+          ADD_TAGS: ['iframe']
+        });
 
         setPostContent(sanitizedHtml);
         setFrontMatter(frontMatterData);
