@@ -6,7 +6,7 @@ date: "2024-03-22"
 I'm currently looking for a job in the data analytics field and most of the jobs
 I come across for a data analyst have this requirement "Experience in developing dashboards".
 
-At first glance I thought it had to do with being able to use PowerBI which I had been taught in school and had a few projects under my belt but alas was I wrong. A few youtube videos and a chat with a senior colleague made me realise what these line meant "We need someone with data engineering skills".
+At first glance I thought it had to do with being able to use PowerBI which I had been taught in school and had a few projects under my belt but alas was I wrong. A few youtube videos and a chat with a senior colleague made me realise what that line meant "We need someone with data engineering skills".
 
 <div style="width:100%;height:0;padding-bottom:75%;position:relative;"><iframe src="https://giphy.com/embed/11ykUODgXjAXZu" width="100%" height="400px" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><a href="https://giphy.com/gifs/friends-reactiongifs-time-11ykUODgXjAXZu">via GIPHY</a>
 
