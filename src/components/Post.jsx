@@ -57,7 +57,8 @@ const Post = () => {
 
         <p className='text-2xl text-center'>END</p>
 
-        <span><Link  to='/'>← Return to Homepage</Link></span>
+        <p className='mt-6'><Link  to='/'>← Return to Homepage</Link></p>
+        <p className='mt-4'><Link to='/posts'>Checkout my other writeups →</Link></p>
       </article>
       
     </>
