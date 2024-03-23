@@ -31,7 +31,7 @@ const Home = () => {
             className="space-y-6 border-b xl:border-none border-[#42200620] pb-6 sm:col-span-2 xl:col-span-1"
         >
             <div className="text-2xl">
-                According to my degree I'm a data analyst but last I checked I have to transform the data also so yeah, I'm an analytics engineer.
+                Officially, my degree says I'm a data analyst, but considering all the data transformation I do, let's just say I'm an analytics engineer.
             </div>
             
             <nav>
