@@ -12,7 +12,7 @@ const Post = () => {
   const { slug } = useParams();
 
   useEffect(() => {
-    fetch(`/posts/${slug}.md`)
+    fetch(`/posts/published/${slug}.md`)
       .then(response => response.text())
       .then(text => {
         // Simple front matter parsing

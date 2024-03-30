@@ -25,7 +25,7 @@ const Posts = () => {
   return (
     <main className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
       {posts.map(post => (
-        <Link to={`/posts/${post.slug}`} key={post.slug}>
+        <Link to={`/posts/published/${post.slug}`} key={post.slug}>
             <PostCard post={post}/>
         </Link>
       ))}
