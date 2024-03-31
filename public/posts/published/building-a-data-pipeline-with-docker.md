@@ -5,7 +5,7 @@ date: "2024-03-30"
 
 I started the data engineering bootcamp by [DataTalks](https://datatalks.club/) earlier this week. Containerization and Infrastructure as Code was covered. To gain a better understanding of what was taught I built a data pipeline using Docker. You can check out the project on my [GitHub](https://github.com/KenImade/data-ingestion-pipeline).
 
-![Project Structure](../../public/posts/photos/data-ingestion-plan.png "Project Structure")
+![Project Structure](/posts/photos/data-ingestion-plan.png "Project Structure")
 
 ## Writing the Ingestion Script
 To understand the structure of the data before ingestion and to test the data ingestion pipeline, I used Jupyter Notebooks and also setup a PostgreSQL database with Docker using the below command.
