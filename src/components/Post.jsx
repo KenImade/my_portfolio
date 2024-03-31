@@ -52,11 +52,11 @@ const Post = () => {
       <article>
         <header className='mb-6'>
           <h1 className="text-4xl italic font-bold">{frontMatter.title}</h1>
-          <p className='text-lg italic text-blue-950 opacity-90 mt-2 p-0'>{formatDate(frontMatter.date)}</p>
+          <p className='text-lg italic opacity-90 mt-2 p-0'>{formatDate(frontMatter.date)}</p>
         </header>
         
         <div className="divide-y xl:divide-y-0 divide-neutral-200 mb-6">
-          <div className="prose text-lg text-blue-950 divide-y divide-neutral-200 xl:pb-0 xl:col-span-3 xl:row-span-2" dangerouslySetInnerHTML={{ __html: postContent }} />
+          <div className="prose text-lg divide-y divide-neutral-200 xl:pb-0 xl:col-span-3 xl:row-span-2" dangerouslySetInnerHTML={{ __html: postContent }} />
         </div>
 
         <p className='text-2xl'>END</p>

@@ -4,11 +4,11 @@ import formatDate from "../hooks/dateFormat"
 const PostCard = ({post}) => {
   return (
     <article>
-        <div className="text-lg font-medium">
+        <div className="text-lg font-bold">
             <Link to={`/posts/${post.slug}`}>{post.title}</Link>
             <dl>
                 <dt className="sr-only">Published on</dt>
-                <dd className="text-base italic text-sky-950 opacity-90 m-0 p-0">
+                <dd className="text-base italic opacity-80 m-0 p-0">
                     {formatDate(post.date)}
                 </dd>
             </dl>

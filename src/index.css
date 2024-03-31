@@ -4,7 +4,7 @@
 
 html {
   @apply font-monteserrat;
-  background-color: theme("colors.sky.100");
+  background-color: theme("colors.zinc.50");
   color: theme("colors.blue.950");
 }
 

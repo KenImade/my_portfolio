@@ -1,5 +1,10 @@
 [
     {
+        "title": "Data Ingestion Pipeline with Docker",
+        "description": "Developed a data ingestion pipline with Docker to extract data from a CSV file, transform with Python and load into a PostgreSQL database.",
+        "link": "https://github.com/KenImade/data-ingestion-pipeline"
+    },
+    {
         "title": "Financial Market Analyzer",
         "description": "A Python-based application designed to retrieve, analyze, and visualize financial market data.",
         "link": "https://github.com/KenImade/financial-market-analyser"
