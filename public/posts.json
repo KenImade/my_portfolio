@@ -8,6 +8,11 @@
       "slug": "analytics-with-a-slice-of-engineering",
       "title": "Analytics with A Slice of Engineering",
       "date": "2024-03-22"
+    },
+    {
+      "slug": "building-a-data-pipeline-with-docker",
+      "title": "Building a Data Pipeline with Docker",
+      "date": "2024-03-30"
     }
 ]
   
