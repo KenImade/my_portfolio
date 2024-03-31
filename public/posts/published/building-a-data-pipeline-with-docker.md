@@ -5,7 +5,7 @@ date: "2024-03-30"
 
 I started the data engineering bootcamp by [DataTalks](https://datatalks.club/) earlier this week. Containerization and Infrastructure as Code was covered. To gain a better understanding of what was taught I built a data pipeline using Docker. You can check out the project on my [GitHub](https://github.com/KenImade/data-ingestion-pipeline).
 
-![Project Structure](../photos/data-ingestion-plan.png "Project Structure")
+![Project Structure](../../public/posts/photos/data-ingestion-plan.png "Project Structure")
 
 ## Writing the Ingestion Script
 To understand the structure of the data before ingestion and to test the data ingestion pipeline, I used Jupyter Notebooks and also setup a PostgreSQL database with Docker using the below command.
@@ -22,9 +22,9 @@ postgres:13
 
 The command tells Docker to create a container which runs a Postgres database. The variables with the `-e` tag indicates environmental variables, `-v` which is the volume or the directory where the data being stored in the database will be persisted and `-p` the port through which we can access the database.
 
-For the people reading who are a bit unfamiliar with Docker. Docker is a software that allows you to run a software packages in an environment called a container which is isolated from other environments. Unlike traditional virtual machines, containers do not bundle the entire operating system, making them lightweight and faster to launch. Docker ensures that applications run consistently across different environments by packaging them with their dependencies.
+For the people reading who are a bit unfamiliar with Docker. Docker is a software that allows you to run your application in an environment called a container which is isolated from other environments. Unlike traditional virtual machines, containers do not bundle the entire operating system, making them lightweight and faster to launch. Docker ensures that applications run consistently across different environments by packaging them with their dependencies.
 
-With the database setup, I focused on writing the ingestion script, the data which focused on the number of car owners in households in Italy was gotten from the EU Data portal. Exploring through the dataset I came up with a script which ingests the data into the postgres database in chunks of 20 rows.
+With the database setup, I focused on writing the ingestion script, the data which describes the number of car owners in households in Italy was gotten from the EU Data portal. Exploring through the dataset I came up with a script which ingests the data into the postgres database in chunks of 20 rows.
 
 ```python
 engine = create_engine(f"postgresql://{user}:{password}@{host}:{port}/{db}")
@@ -76,7 +76,7 @@ COPY data_pipeline.py data_pipeline.py
 
 ENTRYPOINT [ "python", "data_pipeline.py" ]
 ```
-This instructions above tell Docker to use the Python version 3.12.2, install wget, pandas, sqlalchemy, and pyscopg2. Then create a directory called ***app*** then finally copy the data ingestion script into the environment and then run the script using the python environment.
+This instructions above tell Docker to use the Python version 3.12.2, install wget, pandas, sqlalchemy, and pyscopg2. Create a directory called ***app*** then finally copy the data ingestion script into the environment and then run the script using the python environment.
 
 ## Composing a Docker Orchestra
 A downside about running Docker containers is that you have to constantly write various long lines of command line or bash arguments to set them up. This is where docker-compose shines. Using a single YAML file we are able to write out what exatly we want to happen in our container. Take for example the configuration of a Postgres Database with PgAdmin when you try to run and connect them without the help of a docker-compose file.
