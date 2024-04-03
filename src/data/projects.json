@@ -1,5 +1,10 @@
 [
     {
+        "title": "Data Pipeline with Apache Airflow",
+        "description": "Developed and implemented a Directed Acyclic Graph (DAG) using Apache Airflow to orchestrate the end-to-end process of downloading, cleaning, transforming, and uploading data into Google Cloud Storage and a BigQuery table.",
+        "link": "https://github.com/KenImade/data-pipeline-with-airflow"
+    },
+    {
         "title": "Data Ingestion Pipeline with Docker",
         "description": "Developed a data ingestion pipline with Docker to extract data from a CSV file, transform with Python and load into a PostgreSQL database.",
         "link": "https://github.com/KenImade/data-ingestion-pipeline"
