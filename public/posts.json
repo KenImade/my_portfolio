@@ -13,6 +13,11 @@
       "slug": "building-a-data-pipeline-with-docker",
       "title": "Building a Data Pipeline with Docker",
       "date": "2024-03-30"
+    },
+    {
+      "slug": "orchestrating-with-airflow",
+      "title": "Orchestrating with Airflow",
+      "date": "2024-04-3"
     }
 ]
   
