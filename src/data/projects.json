@@ -1,4 +1,9 @@
-[
+[   
+    {
+        "title": "Real Estate Dashboard",
+        "description": "End-to-end data engineering pipeline to develop a dashboard which showcases transcation data of price paid for various properties in England and Wales from 1995 till date.",
+        "link": "https://github.com/KenImade/real_estate_dashboard"
+    },
     {
         "title": "Data Pipeline with Apache Airflow",
         "description": "Developed and implemented a Directed Acyclic Graph (DAG) using Apache Airflow to orchestrate the end-to-end process of downloading, cleaning, transforming, and uploading data into Google Cloud Storage and a BigQuery table.",

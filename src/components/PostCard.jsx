@@ -3,7 +3,7 @@ import formatDate from "../hooks/dateFormat"
 
 const PostCard = ({post}) => {
   return (
-    <article>
+    post["is_published"] && <article>
         <div className="text-lg font-bold">
             <Link to={`/posts/${post.slug}`}>{post.title}</Link>
             <dl>
